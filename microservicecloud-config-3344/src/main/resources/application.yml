@@ -1,0 +1,24 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name:  microservicecloud-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/yangpan0919/springcloud-config.git   #GitHub上面的git仓库名字
+
+            # /{application}/{profile}[/{label}]
+            # /{application}-{profile}.yml
+            # /{label}/{application}-{profile}.yml
+            # /{application}-{profile}.properties
+            # /{label}/{application}-{profile}.properties
+            #spring.cloud.config.label 指明远程仓库的分支
+            #spring.cloud.config.profile
+            #dev开发环境
+            #test测试环境
+            #prod正式环境
+            #spring.cloud.config.uri        指明配置服务中心的网址。
+
